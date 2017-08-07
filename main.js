@@ -18,11 +18,11 @@ function githubData() {
   console.log(data)
 //you can act like you're in a HTML file.
   let dataString = `
-    <li>${data.name}</li>
-    <li>${data.url}</li>
-    <li>${data.email}</li>
-    <li>${data.company}</li>
-    <li>${data.blog}</li>
+    <li>Name:${data.name}</li>
+    <li>Github URL ${data.url}</li>
+    <li>Email:${data.email}</li>
+    <li>Company:${data.company}</li>
+    <li>Website:${data.blog}</li>
   `
 
   ulNode.innerHTML = dataString
@@ -30,7 +30,7 @@ function githubData() {
 
 let imageDiv = document.querySelector(".avatar")
  imageString = `
-<img src=${data.avatar_url} width="250">
+<img src=${data.avatar_url}>
   `
   imageDiv.innerHTML = imageString
 }
